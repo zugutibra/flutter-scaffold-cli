@@ -1,6 +1,6 @@
 # flutter_scaffold_cli
 
-[![CI](https://github.com/zugutibra/clean-flutter-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/zugutibra/clean-flutter-cli/actions/workflows/ci.yml)
+[![CI](https://github.com/zugutibra/flutter-scaffold-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/zugutibra/flutter-scaffold-cli/actions/workflows/ci.yml)
 
 A Dart CLI that scaffolds new Flutter projects — and new feature slices in
 existing ones — following **Clean Architecture + BLoC**, matching the
