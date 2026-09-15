@@ -277,7 +277,10 @@ class TodoLocalDataSourceImpl implements TodoLocalDataSource {
   @override
   Future<TodoModel> addTodo(String title) async {
     try {
-      final model = TodoModel(id: DateTime.now().millisecondsSinceEpoch, title: title);
+      // Hive int keys must fit in 0..0xFFFFFFFF; millisecondsSinceEpoch
+      // alone is 13 digits and overflows that, so mask it down.
+      final id = DateTime.now().millisecondsSinceEpoch & 0xFFFFFFFF;
+      final model = TodoModel(id: id, title: title);
       await box.put(model.id, model);
       return model;
     } catch (_) {
