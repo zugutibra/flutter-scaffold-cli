@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:clean_flutter_cli/src/utils/pubspec_editor.dart';
+import 'package:flutter_scaffold_cli/src/utils/pubspec_editor.dart';
 import 'package:path/path.dart' as p;
 import 'package:test/test.dart';
 

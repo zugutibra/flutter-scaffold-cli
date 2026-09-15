@@ -1,4 +1,4 @@
-name: clean_flutter_cli
+name: flutter_scaffold_cli
 description: >-
   A CLI that scaffolds Flutter projects and feature slices following
   Clean Architecture + BLoC conventions.

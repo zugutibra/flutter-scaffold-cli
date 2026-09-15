@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:clean_flutter_cli/src/templates/example_feature_templates.dart';
-import 'package:clean_flutter_cli/src/templates/feature_stub_templates.dart';
+import 'package:flutter_scaffold_cli/src/templates/example_feature_templates.dart';
+import 'package:flutter_scaffold_cli/src/templates/feature_stub_templates.dart';
 import 'package:test/test.dart';
 
 /// Diffs generated template output against checked-in fixtures. If a

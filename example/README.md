@@ -1,12 +1,12 @@
 # example
 
-`clean_flutter_cli` is a command-line tool, so its "example" is a CLI
+`flutter_scaffold_cli` is a command-line tool, so its "example" is a CLI
 session rather than a Dart API.
 
 ## Scaffold a new project
 
 ```sh
-dart pub global activate clean_flutter_cli
+dart pub global activate flutter_scaffold_cli
 clean_flutter create my_app --org com.example
 cd my_app
 flutter pub get

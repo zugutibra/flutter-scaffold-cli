@@ -1,4 +1,4 @@
-import 'package:clean_flutter_cli/src/utils/validators.dart';
+import 'package:flutter_scaffold_cli/src/utils/validators.dart';
 import 'package:test/test.dart';
 
 void main() {

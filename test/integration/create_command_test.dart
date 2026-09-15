@@ -7,7 +7,7 @@ library;
 // Run explicitly with: dart test --tags e2e
 import 'dart:io';
 
-import 'package:clean_flutter_cli/src/utils/process_runner.dart';
+import 'package:flutter_scaffold_cli/src/utils/process_runner.dart';
 import 'package:path/path.dart' as p;
 import 'package:test/test.dart';
 

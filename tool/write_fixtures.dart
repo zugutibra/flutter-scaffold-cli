@@ -3,8 +3,8 @@
 // after intentionally changing a template's expected output.
 import 'dart:io';
 
-import 'package:clean_flutter_cli/src/templates/example_feature_templates.dart';
-import 'package:clean_flutter_cli/src/templates/feature_stub_templates.dart';
+import 'package:flutter_scaffold_cli/src/templates/example_feature_templates.dart';
+import 'package:flutter_scaffold_cli/src/templates/feature_stub_templates.dart';
 
 void main() {
   final fixturesDir = Directory('test/fixtures')..createSync(recursive: true);

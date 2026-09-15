@@ -1,4 +1,4 @@
-# clean_flutter_cli
+# flutter_scaffold_cli
 
 [![CI](https://github.com/zugutibra/clean-flutter-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/zugutibra/clean-flutter-cli/actions/workflows/ci.yml)
 
@@ -29,7 +29,7 @@ something real instead of the default counter app.
 ## Install
 
 ```sh
-dart pub global activate clean_flutter_cli
+dart pub global activate flutter_scaffold_cli
 ```
 
 Requires the [Flutter SDK](https://docs.flutter.dev/get-started/install) on

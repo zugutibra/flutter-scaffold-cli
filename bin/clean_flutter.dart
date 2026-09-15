@@ -3,8 +3,8 @@ import 'dart:io';
 import 'package:args/command_runner.dart';
 import 'package:mason_logger/mason_logger.dart';
 
-import 'package:clean_flutter_cli/src/commands/create_command.dart';
-import 'package:clean_flutter_cli/src/commands/generate_feature_command.dart';
+import 'package:flutter_scaffold_cli/src/commands/create_command.dart';
+import 'package:flutter_scaffold_cli/src/commands/generate_feature_command.dart';
 
 const String packageVersion = '0.1.0';
 
