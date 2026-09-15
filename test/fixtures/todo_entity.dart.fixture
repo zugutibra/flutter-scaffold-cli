@@ -1,0 +1,20 @@
+import 'package:equatable/equatable.dart';
+
+class Todo extends Equatable {
+  const Todo({required this.id, required this.title, this.isDone = false});
+
+  final int id;
+  final String title;
+  final bool isDone;
+
+  Todo copyWith({int? id, String? title, bool? isDone}) {
+    return Todo(
+      id: id ?? this.id,
+      title: title ?? this.title,
+      isDone: isDone ?? this.isDone,
+    );
+  }
+
+  @override
+  List<Object?> get props => [id, title, isDone];
+}

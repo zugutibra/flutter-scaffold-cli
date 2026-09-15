@@ -1,0 +1,22 @@
+name: Publish to pub.dev
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+*'
+
+# Required for pub.dev's OIDC-based automated publishing:
+# https://dart.dev/tools/pub/automated-publishing
+permissions:
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+      - run: dart pub get
+      - run: dart analyze --fatal-infos
+      - run: dart test --exclude-tags e2e
+      - run: dart pub publish --force

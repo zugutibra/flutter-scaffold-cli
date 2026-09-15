@@ -1,0 +1,10 @@
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'package:demo_app/features/payments/presentation/bloc/payments_event.dart';
+import 'package:demo_app/features/payments/presentation/bloc/payments_state.dart';
+
+class PaymentsBloc extends Bloc<PaymentsEvent, PaymentsState> {
+  PaymentsBloc() : super(const PaymentsInitial()) {
+    // TODO: register event handlers with `on<Event>(...)`.
+  }
+}

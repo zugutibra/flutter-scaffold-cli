@@ -1,0 +1,34 @@
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'package:demo_app/core/usecases/usecase.dart';
+import 'package:demo_app/features/example/domain/usecases/add_todo.dart';
+import 'package:demo_app/features/example/domain/usecases/get_todos.dart';
+import 'package:demo_app/features/example/presentation/bloc/todo_event.dart';
+import 'package:demo_app/features/example/presentation/bloc/todo_state.dart';
+
+class TodoBloc extends Bloc<TodoEvent, TodoState> {
+  TodoBloc({required this.getTodos, required this.addTodo}) : super(const TodoInitial()) {
+    on<LoadTodos>(_onLoadTodos);
+    on<CreateTodo>(_onCreateTodo);
+  }
+
+  final GetTodos getTodos;
+  final AddTodo addTodo;
+
+  Future<void> _onLoadTodos(LoadTodos event, Emitter<TodoState> emit) async {
+    emit(const TodoLoading());
+    final result = await getTodos(const NoParams());
+    result.fold(
+      (failure) => emit(TodoError(failure.message)),
+      (todos) => emit(TodoLoaded(todos)),
+    );
+  }
+
+  Future<void> _onCreateTodo(CreateTodo event, Emitter<TodoState> emit) async {
+    final result = await addTodo(AddTodoParams(event.title));
+    await result.fold(
+      (failure) async => emit(TodoError(failure.message)),
+      (_) async => add(const LoadTodos()),
+    );
+  }
+}

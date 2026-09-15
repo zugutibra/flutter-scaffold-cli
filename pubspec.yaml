@@ -1,0 +1,26 @@
+name: clean_flutter_cli
+description: >-
+  A CLI that scaffolds Flutter projects and feature slices following
+  Clean Architecture + BLoC conventions.
+version: 0.1.0
+repository: https://github.com/YOUR_GITHUB_USERNAME/clean_flutter_cli
+topics:
+  - cli
+  - flutter
+  - clean-architecture
+  - code-generation
+
+environment:
+  sdk: ^3.12.2
+
+executables:
+  clean_flutter: clean_flutter
+
+dependencies:
+  args: ^2.6.0
+  mason_logger: ^0.3.2
+  path: ^1.9.0
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.6
