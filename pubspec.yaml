@@ -3,7 +3,7 @@ description: >-
   A CLI that scaffolds Flutter projects and feature slices following
   Clean Architecture + BLoC conventions.
 version: 0.1.0
-repository: https://github.com/YOUR_GITHUB_USERNAME/clean_flutter_cli
+repository: https://github.com/zugutibra/clean-flutter-cli
 topics:
   - cli
   - flutter

@@ -1,6 +1,6 @@
 # clean_flutter_cli
 
-[![CI](https://github.com/YOUR_GITHUB_USERNAME/clean_flutter_cli/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_GITHUB_USERNAME/clean_flutter_cli/actions/workflows/ci.yml)
+[![CI](https://github.com/zugutibra/clean-flutter-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/zugutibra/clean-flutter-cli/actions/workflows/ci.yml)
 
 A Dart CLI that scaffolds new Flutter projects — and new feature slices in
 existing ones — following **Clean Architecture + BLoC**, matching the
@@ -113,9 +113,6 @@ dart run tool/write_fixtures.dart
 push, using [pub.dev's OIDC-based automated publishing](https://dart.dev/tools/pub/automated-publishing)
 (no stored credentials). Before the first tagged release, connect this
 repo on the package's pub.dev admin page ("Automated publishing").
-
-> Before publishing: replace `YOUR_GITHUB_USERNAME` in `pubspec.yaml` and
-> this README, and the copyright line in `LICENSE`, with your own.
 
 ## License
 
